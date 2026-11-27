@@ -1,72 +1,129 @@
-# Matriz consolidada — Entrevistas Obra 360
+# Matriz consolidada — Entrevistas e pesquisa quantitativa Obra 360
 
-> Evidências derivadas das transcrições automáticas de Bruna (Cachoeiras), João e Solimar (Cachoeira) e Sensia Solarium. As transcrições devem ser validadas contra as gravações originais antes de serem tratadas como documentação final.
+> Evidências derivadas de 3 fontes qualitativas (transcrições das entrevistas) e 6 respostas quantitativas registradas em `Obra 360/Research/Obra 360_ Prática de Campo e Mapeamento do _Produto Ideal_(Sheet1).csv`. As transcrições são automáticas e ainda exigem validação humana contra as gravações.
+
+## Universo da pesquisa
+
+- Entrevistas: Bruna (Cachoeiras), João e Solimar (Cachoeira) e duas usuárias do Sensia Solarium.
+- Pesquisa quantitativa: 6 participantes anônimos, respostas entre 24/11/2026 e 26/11/2026.
+- Interpretação: n=6 permite indicar convergências e divergências no pequeno conjunto. Não permite inferência estatística sobre a população de usuários.
 
 ## Fontes analisadas
 
-| Entrevista | Participantes | Evidência principal |
+| Fonte | Evidência principal |
+|---|---|
+| Entrevistas | Uso diário, controles paralelos, medição, OP, materiais, mão de obra, conectividade, sincronização e rastreabilidade. |
+| Pesquisa quantitativa | Uso de meios alternativos, motivos de alternância, preferências de fluxo, usabilidade SUS-like e recursos desejados. |
+
+## Síntese cruzada
+
+| Tema | Evidência qualitativa | Evidência quantitativa (n=6) | Cruzamento | Decisão recomendada |
+|---|---|---|---|---|
+| Uso de controles paralelos | Bruna usa planilha impressa; Sensia usa planilha própria. João/Solimar citam controles e fechamento mensal. | 6/6 afirmaram usar ou coletar fora antes do uso do Obra 360, como papel, Excel ou planilha. | Confirmação forte no conjunto. Todo participante quantificado declarou uso alternativo. | Prioridade crítica: eliminar transcrição posterior por meio de captura rápida no contexto da atividade. |
+| Falta de tempo para apontamento diário | Participantes relatam rotina corrida e dificuldade de apontar serviço no dia. | 5/6 citaram falta de tempo, lentidão, muitos cliques ou insegurança como razões para não usar o app no mesmo dia; 1 declarou lógica de pagamento mensal. | Confirmação forte da lacuna do fluxo diário. | Criar check-in curto no fim da atividade ou alternativa por voz/foto/local recente. |
+| Instabilidade e falta de internet | Entrevistas mencionam rede fraca, dispositivos limitados e sincronização. | Instabilidade, lentidão ou falta de sinal aparece em pelo menos 4 respostas abertas; 2 participantes pediram modo offline completo. | Convergência forte. | Offline completo com fila, estado de sincronização e resolução de conflito. |
+| Segurança da informação | Sensia usa papel/catraca como conferência; Bruna usa planilhas paralelas. | Medo de perder preenchimento ou falha de sincronização foi citado por 3 respostas. | Confirmação consistente. | Preservar rascunhos localmente e mostrar confirmação de salvamento/sync. |
+| Mudança de avanço por unidade/pavimento | Bruna e Sensia sugerem escopo conjunto; João/Solimar relatam lançamento separado em 12 pavimentos. | 3/6 disseram que edição por pavimento não se aplica ou apresenta lentidão/erro; 2 citaram muitos cliques por unidade; 1 afirmou uso frequente. | Medição por pavimento é desejável, mas não é suficientemente universal. Quantidades diferentes por unidade são o principal limite. | Criar seleção em lote como padrão, com quantitativo por unidade editável apenas onde houver exceção. |
+| Pacotes de serviços | Bruna e Sensia sugerem agrupar vários serviços ou apontar por pessoa/pacote. | 2/6 não sabiam da funcionalidade; 2 disseram não saber ou não encontrar pacotes; 1 disseram interface difícil; 1 não avaliou o benefício diretamente. | Existe gap de descoberta funcional e falta de evidência de uso real. | Testar protótipo de pacote e validar ganho de tempo antes de ampla implementação. |
+| Solicitação de material avulso | Sensia relata dificuldade de catálogo e Bruna trata abastecimento por pedido físico. | 4/6 não sabiam da integração direta com o almoxarife; 1 preferiu WhatsApp/rádio/presencial; 1 citou dificuldade para achar o insumo. | Convergência sobre baixa visibilidade e comunicação fragmentada. | Tornar solicitações visíveis, rastreáveis e integradas ao almoxarife. |
+| Baixa automática de material | Entrevistas mostram estoque, código e consumo divergentes. | 4/6 não sabiam do impacto da baixa automática; 1 afirmou divergência física/sistema; 1 disse não acompanhar. | Confirmação de baixa transparência e risco de divergência. | Exibir antes e depois da baixa, unidade aplicada e exceções físicas. |
+| FVS e não conformidade | Sensia separa FVS e não conformidade; Bruna faz vistoria no canteiro. | 3/6 fizeram FVS antes do encerramento; 1 depois com justificativa; 1 citou atrito no preenchimento; 1 não informou padrão. | Variação real de momento e legitimidade contextual. | Permitir FVS antes ou depois, com justificativa, bloqueios configuráveis e rastreabilidade. |
+| Catálogo e unidades de material | Sensia e Bruna citam códigos de porta, nomes, unidade e quantidade. | 1 participante citou dificuldade explícita para achar insumo; 1 citou divergência física; 1 disse não acompanhar baixa; respostas abertas mencionam catálogo e falta de campo. | Evidência qualitativa mais forte que quantitativa por n pequeno. | Criar busca por descrição/aplicação e converter unidade de consumo para unidade de compra. |
+| Catraca e presença | Entrevistas citam conferência por catraca/ponto. | 4/6 não sabiam da alocação automática da catraca nas OPs. 1 citou conflito de alocação real; 1 não se aplica como resposta? | Evidência clara de gap de conhecimento e risco de alocação incorreta. | Usar catraca como sugestão automática, não como dado definitivo; exigir confirmação ou correção. |
+| Navegação e complexidade | Entrevistas dizem que fluxos exigem várias telas. | Navegação longa/muitos cliques apareceu em pelo menos 3 respostas; complexidade/UX recebeu notas baixas em várias linhas SUS-like. | Convergência forte sobre fricção de navegação. | Reduzir campos e telas para tarefas críticas; manter contexto da obra, torre e última localidade. |
+
+## Indicadores usuabilidade (escala 0–10)
+
+| Participante | Uso frequente | Complexidade adequada | Fácil de usar | Independente | Prático | Consistente | Aprender rápido | Navegação direta | Confiança | Intuitivo |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 10 | 8 | 10 | 9 | 10 | 10 | 8 | 8 | 10 | 10 |
+| 2 | 7 | 2 | 4 | 7 | 4 | 8 | 8 | 5 | 3 | 3 |
+| 3 | 10 | 5 | 10 | 10 | 2 | 0 | 10 | 3 | 10 | 10 |
+| 4 | 9 | 5 | 9 | 6 | 3 | 3 | 9 | 7 | 8 | 6 |
+| 5 | 3 | 6 | 10 | 10 | 5 | 10 | 10 | 10 | 10 | 10 |
+| 6 | 3 | 4 | 6 | 7 | 2 | 3 | 9 | 3 | 6 | 7 |
+
+### Médias do conjunto
+
+| Métrica | Média | Faixa |
+|---|---:|---:|
+| Uso frequente | 7,0 | 3–10 |
+| Complexidade adequada | 5,0 | 2–8 |
+| Fácil de usar | 8,2 | 4–10 |
+| Uso independente | 8,2 | 6–10 |
+| Prático/agiliza tarefas | 4,3 | 2–10 |
+| Consistência | 5,7 | 0–10 |
+| Aprendizado rápido | 9,0 | 8–10 |
+| Navegação direta | 6,0 | 3–10 |
+| Confiança | 7,8 | 3–10 |
+| Intuitivo sem treinamento extenso | 7,7 | 3–10 |
+
+Leitura cautelosa:
+
+- A baixa prática percebida (4,3) confirma que facilidade de interface não significa ganho de produtividade no trabalho real.
+- A complexidade adequada (5,0) e consistência (5,7) indicam alta dispersão entre perfis.
+- Aprendizado rápido (9,0) é a métrica mais alta, mas pode coexistir com baixa frequência e baixa praticidade.
+
+## Recursos desejados no momento certo
+
+| Momento/recurso | Frequências no CSV | Evidência cruzada |
+|---|---:|---|
+| Check-in rápido da frente: OPs em andamento e confirmação em um toque | 3 respostas | Confirma necessidade de apontamento breve e localização contextual. |
+| Lista pronta da catraca às 16h30 para conferir | 2 respostas | Reforça catraca como sugestão de presença a validar. |
+| Pendências, bloqueios e prioridades antes do campo | 2 respostas | Reforça alerta proativo e integração com planejamento. |
+| Meta semanal vs. realizado por torre | 3 respostas | Apoia personalização por torre/período e feedback semanal. |
+| Fim do retrabalho no fechamento, medição 90% pronta | 3 respostas | Confirma problema de atualização tardia e fechamento corrido. |
+| Modo offline | 2 respostas | Confirma prioridade de conectividade em andares sem sinal. |
+| Atalho para última torre/pavimento trabalhado | 1 resposta | Complementa personalização e redução de navegação. |
+| Registro por foto/voz | 1 resposta | Requer validação técnica e cuidado com estrutura de dados. |
+
+## Prioridades refinadas
+
+### P0 — Resolver antes de ampliar o MVP
+
+1. Modo offline com sincronização confiável e rascunhos preservados.
+2. Captura rápida por foto/voz/local recente com revisão antes do envio.
+3. Check-in breve por frente, equipe, torre ou pavimento.
+4. Segurança, transparência e rastreabilidade da catraca, baixa de material e sincronização.
+
+### P1 — Validar em protótipo
+
+1. Pacotes reutilizáveis com escopo, unidade e exceções.
+2. Edição em lote por pavimento ou torre, mantendo quantitativos individuais.
+3. Busca contextual de materiais por aplicação, descrição e unidade.
+4. Histórico claro de quem alterou, mediu, vistoriou e encerrou.
+
+### P2 — Melhorias condicionais
+
+1. Personalização por papel e obra.
+2. Alertas proativos no início do turno e no fechamento.
+3. Termômetro semanal de meta versus realizado.
+4. Integração com catraca como sugestão validada.
+
+## Hipóteses e vereditos preliminares
+
+| Hipótese | Evidência cruzada | Veredito atual |
 |---|---|---|
-| Bruna — Cachoeiras | Bruna e entrevistador | Uso diário de medição, OP, materiais, apontamento e controles paralelos |
-| João e Solimar — Cachoeira | João e Solimar | Uso de MOP/AMP/EMP/MEI, abertura de OP, medição conjunta, conectividade e sincronização |
-| Sensia Solarium | Duas usuárias do Portal 360 | Planejamento, não conformidades, apontamento, materiais, unidades de medida e acesso aos históricos |
+| H1 — Registro em lote reduz fricção | Entrevistas concordam; pesquisa mostra muitos cliques por unidade e interesse em OP repetitiva. | **Convergente, não validada quantitativamente**. |
+| H2 — Offline reduz erro e abandono | 2 pedidos explícitos de offline e relatos recorrentes de internet instável. | **Convergente e prioritária**. |
+| H3 — Alertas proativos aumentam uso diário | Pesquisa pede pendências às 7h e status no campo; entrevistas pedem planejamento. | **Convergente, requer teste de frequência**. |
+| H4 — Captura por foto/voz acelera apontamento | 1 resposta sugere foto/voz; entrevista e pesquisa mostram coleta fora do app. | **Hipótese plausível, sem evidência suficiente**. |
+| H5 — Catálogo contextual reduz erro de material | Entrevistas detalham unidades/códigos; pesquisa cita dificuldade de achar insumo e divergência. | **Convergente em amostra limitada**. |
+| H6 — Catraca elimina apontamento manual | 4/6 não sabiam da alocação automática; entrevista revela conflito de alocação real. | **Não validada; a catraca é sinal, não confirmação definitiva**. |
 
-## Matriz de dores, evidências e oportunidades
+## Limites da análise
 
-| Tema | Dor evidenciada | Evidência citável | Entrevistas | Nível de evidência | Oportunidade | Próxima validação |
-|---|---|---|---|---|---|---|
-| Múltiplos controles paralelos | Usuários mantêm planilhas e papéis além do 360 para dar segurança ao processo e compensar limitações do sistema. | Bruna: planilha impressa acompanha planejamento e abertura de OPs ([transcrição, 00:04:31](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)); Sensia: planilha própria registra presença, atividade e quantidade antes do lançamento ([00:00:53](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)). | Bruna; Sensia | Relato recorrente — 2 entrevistas | Definir uma fonte única de verdade e sincronizar planejamento, apontamentos e resultado; preservar controles intermediários apenas até migração e validação. | Comparar erros e retrabalho entre registros paralelos e lançamento no 360. |
-| Apontamento diário é trabalhoso | O lançamento diário exige muitos passos, celulares limitados e acesso a cada unidade/apartamento. | Bruna: apontamento no canteiro exige confirmar unidade, pessoa e frente de trabalho ([00:26:39](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)); Sensia: apontar diariamente é difícil por mudanças constantes e indisponibilidade de aparelhos ([00:03:21](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)). | Bruna; Sensia | Relato recorrente — 2 entrevistas | Permitir apontamentos em lote por pacote, equipe, pavimento ou torre, com confirmação posterior. | Medir tempo por apontamento e percentuais de abandono ou correção. |
-| Falta de acesso e conectividade | Internet instável, poucos celulares e uso no canteiro podem interromper o registro. | João/Solimar: sincronização falha e registros ficam vermelhos ([00:13:17](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_joao_cachoeira.md)); Sensia: aparelhos trocam ou param de funcionar durante o uso ([00:13:05](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)). | João/Solimar; Sensia | Relato recorrente — 2 entrevistas | Criar modo offline robusto, fila local de sincronização e indicação clara do estado dos dados. | Testar duração de offline, perda de dados e recuperação em obras reais. |
-| Erros de sincronização dificultam confiança | Falha deixa dados pendentes ou exige que o usuário limpe cache e refaça a operação. | João/Solimar: ocorre erro de sincronização e status vermelho, exigindo limpeza e reinício ([00:13:17](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_joao_cachoeira.md)); Sensia relata instabilidade intermitente dos aparelhos ([00:13:05](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)). | João/Solimar; Sensia | Relato recorrente — 2 entrevistas | Exibir pendências por operação, permitir reenvio individual e preservar rascunhos sem sobrescrever dados. | Instrumentar taxa de falha, retentativas e duplicações por dia. |
-| Medição conjunta é pouco prática | Medir todas as unidades manualmente cria repetição para escopos compartilhados. | Bruna: medição conjunta exige repetir mesma quantidade ou campos separados por unidade ([00:15:21](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)); João/Solimar: medição em 12 pavimentos exige lançar cada pavimento separadamente ([00:11:59](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_joao_cachoeira.md)); Sensia sugere OP conjunta por andar ([00:12:13](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)). | Bruna; João/Solimar; Sensia | Evidência recorrente — 3 entrevistas | Permitir seleção múltipla de unidades, pavimentos ou torres e aplicar quantitativos padrão com exceções locais. | Validar regra por tipologia de serviço e medir redução de cliques/tempo. |
-| Pacotes de serviço podem acelerar o registro | Usuários visualizam benefícios em agrupar serviços aplicáveis a várias unidades ou em uma frente comum. | Bruna sugere pacote conjunto e identificação de pacote por tipo de serviço ([00:32:38](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)); Sensia sugere apontamento por pessoa ou pacote personalizado ([00:16:26](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)). | Bruna; Sensia | Evidência recorrente — 2 entrevistas | Criar pacotes reutilizáveis de serviços com escopo, responsáveis, unidades e padrões de quantidade. | Testar compreensão e tempo de criação/uso em protótipo. |
-| Abertura de OP não acompanha o planejamento real | Saldo pode não estar disponível e ordens não planejadas são criadas no momento da medição. | Bruna: cria OP quando há saldo ou quando a medição confirma a necessidade ([00:03:21](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)); João/Solimar: abertura é feita no planejamento, mas medição e execução podem variar ([00:08:50](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_joao_cachoeira.md)). | Bruna; João/Solimar | Evidência recorrente — 2 entrevistas | Integrar planejamento, saldo, execução e medição; alertar desvio antes da abertura ou encerramento. | Validar dados do ERP/plataforma e propor critérios de bloqueio ou exceção. |
-| Apontamento de mão de obra é lento | MOP exige registro diário mais detalhado que AMP/EMP/MEI, dificultando o fechamento do período. | João/Solimar: MOP pesa mais no app e AMP é encerrado melhor no fim do mês ([00:05:39](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_joao_cachoeira.md)); Sensia sugere prévia por pessoa e seleção por equipe ([00:16:26](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)). | João/Solimar; Sensia | Evidência recorrente — 2 entrevistas | Permitir apontamento por equipe/pessoa, pré-seleções reutilizáveis e confirmação em lote. | Comparar tempo de MOP diário versus fechamento mensal. |
-| Lista de materiais é rígida e complexa | Materiais dependem de código, unidade e contexto, enquanto o catálogo pode mudar ou não reconhecer o item da obra. | Bruna: abre ordem com lista automática, mas ajustes unitários e solicitações avulsas são necessários ([00:19:58](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)); Sensia: busca por nome/código, unidade e quantidade é difícil; códigos mudam ([00:21:14](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)). | Bruna; Sensia | Evidência recorrente — 2 entrevistas | Simplificar catálogo por descrição e aplicação; relacionar unidade de compra, consumo e entrega; sinalizar código alternativo. | Validar amostra de códigos, unidades e correspondências no ERP/Suprimentos. |
-| Consumo de material não usa unidade adequada | Usuários misturam unidade habitacional, pacote, peso e quantidade real, gerando pedidos incorretos. | Sensia: 600 kg de argamassa poderiam ser representados como 30 sacos de 20 kg ou outro formato compatível ([00:25:49](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)); Bruna pede solicitação avulsa sem lista vinculada ([00:36:20](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)). | Bruna; Sensia | Evidência recorrente — 2 entrevistas | Separar consumo projetado, unidade de compra e unidade de entrega; converter automaticamente e registrar sobras/recalculos. | Confirmar regras fiscais, técnicas e de estoque para cada família de material. |
-| Itens de estoque podem não estar disponíveis | Abastecimento pode ser planejado para um código inexistente no estoque ou em unidade diferente. | Sensia: porta prevista no projeto não existe no estoque sob o código usado ([00:19:47](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)); Bruna indica controle manual entre medição e almoxarifado ([00:10:21](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)). | Bruna; Sensia | Evidência recorrente — 2 entrevistas | Consultar disponibilidade antes da solicitação e sugerir substitutos, versões ou código equivalente. | Integrar estoque real e homologar tempo de atualização. |
-| Não conformidades estão em fluxo separado ou pouco claro | Usuários podem confundir fechamento da OP com encerramento da não conformidade. | Sensia: não conformidade é registrada em fluxo próprio e pode ficar pendente após fechamento da atividade ([00:06:52](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)); Bruna destaca necessidade de vistoria separada da medição ([00:40:00](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)). | Bruna; Sensia | Evidência recorrente — 2 entrevistas | Permitir estados separados, pendências visíveis e bloqueio explícito de encerramento conforme política. | Definir regra entre conclusão da OP, vistoria e não conformidade. |
-| Histórico da OP não permite reconstruir a execução | Após o encerramento, usuários têm dificuldade em consultar quem fez, em qual dia e quais alterações ocorreram. | Sensia: após encerrar, não conseguem verificar facilmente as diárias e responsáveis ([00:27:28](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)); Bruna registra necessidade de rastreabilidade da medição e vistoria ([00:40:00](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)). | Bruna; Sensia | Evidência recorrente — 2 entrevistas | Disponibilizar histórico auditável por pessoa, serviço, unidade, data e alteração. | Levantar requisitos de auditoria e retenção de dados. |
-| Interface atual exige muitas telas e repetições | Usuários alternam entre planejamento, apontamento, medição, não conformidade e materiais. | Sensia: fluxos separados poderiam reduzir confusão, mas outro usuário prefere tudo integrado ([00:10:16](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)); Bruna destaca que contexto e serviço mudam conforme unidade ([00:16:57](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)). | Bruna; Sensia | Evidência recorrente — 2 entrevistas | Criar navegação contextual por unidade/OP com vistas personalizáveis, sem fragmentar dados. | Testar protótipo com perfis que preferem visão integrada versus separada. |
-| Falta personalização de planejamento | Usuários precisam adaptar a visão por equipe, atividade e janela de tempo. | Sensia sugere calendário ou agenda personalizada com equipes e tarefas ([00:18:03](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)); João/Solimar sugerem ampliar medição conjunta além de pavimento ([00:11:10](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_joao_cachoeira.md)). | João/Solimar; Sensia | Evidência recorrente — 2 entrevistas | Permitir vistas por torre, pavimento, equipe, responsável e período, mantendo filtros persistentes. | Validar hierarquias de obra e papéis em protótipo navegável. |
-| Baixa confiança no sistema gera conferências manuais | Usuários preferem verificar por papel, catraca ou conferência física antes de confiar no lançamento final. | Sensia: valida ponto e catraca no fim do mês ([00:02:28](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_sensia_solarium.md)); Bruna controla medição em planilha paralela ([00:04:31](https://github.com/viniciusvasques-ux/Discovery/blob/main/Obra%20360/Interviews/transcricao_bruna_cachoeiras.md)). | Bruna; Sensia | Evidência recorrente — 2 entrevistas | Implementar conferências rápidas com evidência, status de validação e exceções visíveis. | Medir quanto tempo atual é gasto em conferência manual. |
-
-## Hipóteses prioritárias
-
-| Hipótese | Base nas entrevistas | Risco | Próximo teste |
-|---|---|---|---|
-| H1 — Apontamentos em lote reduzem o tempo diário sem prejudicar a precisão. | Medição conjunta e pacotes aparecem em 3 fontes e foram citados como formas de acelerar o processo. | Alto: escopo incorreto pode registrar unidades ou serviços indevidamente. | Protótipo com tarefas por equipe/pavimento e comparação de tempo, erros e retrabalho. |
-| H2 — A operação offline com fila de sincronização reduz perda e repetição de dados no canteiro. | Conectividade limitada e erros de sincronização foram citados por dois grupos independentes. | Alto: conflito de dados pode sobrescrever registros válidos. | Teste controlado com internet intermitente e resolução de conflito por usuário. |
-| H3 — Catálogo contextualizado por aplicação reduz seleção incorreta de material e unidade. | Códigos, unidades e solicitações avulsas foram citados por Bruna e Sensia. | Alto: catálogo incorreto pode gerar abastecimento insuficiente ou excedente. | Teste com materiais reais e comparação entre busca atual e busca por descrição/aplicação. |
-| H4 — Um histórico fechado e auditável aumenta confiança no encerramento da OP. | Sensia não consegue recuperar diárias após encerramento; Bruna pede rastreabilidade de vistoria. | Médio: excesso de detalhes pode dificultar o uso diário. | Teste de recuperação de responsável, data, unidade e motivo de alteração. |
-| H5 — Vistas personalizadas por papel reduzem o esforço sem criar outra fonte de dados. | Sensia separa MOP e empreiteiros; outros usuários preferem visões integradas. | Médio: personalização excessiva pode fragmentar treinamento e processos. | Co-design com perfis de engenharia, produção e suprimentos. |
-
-## Síntese executiva
-
-As entrevistas sugerem que o maior problema não é apenas a ausência de uma funcionalidade, mas a combinação de:
-
-1. processos distribuídos entre Portal 360, planilhas, papel e telefone;
-2. necessidade de repetir registros em diferentes unidades e telas;
-3. conectividade e sincronização instáveis;
-4. catálogo e unidades de material pouco alinhados à linguagem de obra;
-5. baixa rastreabilidade após o encerramento;
-6. necessidade de adaptar o fluxo por equipe, perfil e modalidade de contratação.
-
-Os temas mais consistentes são: apontamento em lote, medição conjunta, operação offline, sincronização confiável, catálogo contextualizado e histórico auditável. Como as fontes são principalmente relatos e transcrições automáticas, nenhum resultado individual deve ser tratado como validação definitiva até revisão humana.
-
-## Limites desta consolidação
-
-- Não há identificação confirmada de todos os falantes nas gravações.
-- Algumas siglas e termos permanecem incertos.
-- Os tempos citados podem conter imprecisões da transcrição automática.
-- Não foram incluídos contagens quantitativas como evidência estatística.
-- Declarações de preferência têm menor peso que comportamento observado.
-- A presença do mesmo tema em várias entrevistas indica consistência qualitativa, não representatividade amostral.
+- A pesquisa tem n=6 e não representa toda a população de obras.
+- Alguns participantes responderam categorias que não se aplicavam à sua realidade física.
+- O CSV contém opções abertas e respostas de pesquisa; não há identificadores ou perfil demográfico.
+- As médias 0–10 não constituem SUS oficial e não devem ser interpretadas como índice padronizado.
+- As transcrições automáticas exigem revisão humana.
+- Correlações individuais não foram inferidas sem dados demográficos e sem amostra maior.
 
 ## Validação humana pendente
 
-- Conferir trechos marcados com `[?]` e `[trecho inaudível]`.
-- Confirmar identidade dos participantes em cada gravação.
-- Revisar as citações temporais contra os arquivos originais.
-- Validar expressões de domínio usadas pelas equipes.
-- Adotar esta matriz como insumo de discovery somente após registro de aprovação humana.
+- Confirmar perfil e obra de cada participante quantitativo.
+- Revisar transcrições contra as gravações originais.
+- Validar quais respostas referem uso atual versus intenção futura.
+- Ampliar amostra antes de priorização por frequência populacional.
+- Converter esta matriz em matriz CSD e matriz de hipóteses somente após validação.
